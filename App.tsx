@@ -7,15 +7,15 @@ import {
   RTCSessionDescription,
   MediaStream,
   mediaDevices,
-  RTCView
+  RTCView,
   //@ts-ignore
 } from 'react-native-webrtc-web-shim';
-import { Connection } from 'react-native-janus-mqtt';
+import { Connection } from "react-native-janus-mqtt";
 import { Logger } from './node_modules/react-native-janus-mqtt/src/utils';
 import type Session from './node_modules/react-native-janus-mqtt/src/session';
 import VideocallHandle from './node_modules/react-native-janus-mqtt/src/plugins/videocall-plugin';
 
-const LOG_NS = '[App.ts]';
+const LOG_NS = '[VideoCall.ts]';
 let connection: Connection;
 let session: Session;
 let handle: any;
@@ -622,7 +622,7 @@ const styles = StyleSheet.create({
     gap: 20,
   },
 
-    input: {
+  input: {
     height: 40,
     margin: 12,
     borderWidth: 1,
